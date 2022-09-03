@@ -21,9 +21,9 @@ The first time you use this script a backup of main.mr will be created, wich wil
 
 #Run Simulator 
 function StartSimulator {
-#cd $rootFolder"bin\"
-#& ".\engine-sim-app.exe"
-& $SimulatorExe
+cd $rootFolder"bin\"
+& ".\engine-sim-app.exe"
+#& $SimulatorExe
 Exit}
 
 #hide Powershell Window

@@ -33,7 +33,7 @@ $window = Add-Type -memberDefinition @"
 [DllImport("user32.dll")]
 public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 "@ -name "Win32ShowWindowAsync" -namespace Win32Functions -passThru
-$window::ShowWindow((Get-Process –id $pid).MainWindowHandle, 0) 
+$window::ShowWindow((Get-Process -id $pid).MainWindowHandle, 0) 
 }
 
 #choose the engine file

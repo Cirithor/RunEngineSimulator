@@ -38,6 +38,7 @@ $window::ShowWindow((Get-Process -id $pid).MainWindowHandle, 0)
 
 #choose the engine file
 function selectEngine ($initialDirectory){
+Add-Type -AssemblyName System.Windows.Forms
 $FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{ 
     InitialDirectory =  $initialDirectory
     Filter = 'Engine file (*.mr)|*.mr|All files (*.*)|*.*'
